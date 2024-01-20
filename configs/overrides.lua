@@ -45,6 +45,10 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    -- python
+    "pyright",
+    "black"
   },
 }
 
@@ -55,6 +59,7 @@ M.nvimtree = {
   },
 
   renderer = {
+    group_empty = true,
     highlight_git = true,
     icons = {
       show = {
@@ -76,6 +81,9 @@ M.copilot = {
     },
     auto_trigger = true,
   },
+  filetypes = {
+    markdown = true,
+  }
 }
 
 return M
