@@ -36,6 +36,7 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
+    "json-lsp",
 
     -- java
     "jdtls",

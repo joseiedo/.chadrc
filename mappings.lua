@@ -5,6 +5,8 @@ M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
 
+    ["<C-a>"] = { "ggVG", "select all text" },
+
     --  format with conform
     ["<leader>fm"] = {
       function()
@@ -17,8 +19,8 @@ M.general = {
       function()
         require("base46").toggle_theme()
       end,
-      "Toggle Theme"
-    }
+      "Toggle Theme",
+    },
   },
   v = {
     [">"] = { ">gv", "indent" },
@@ -60,8 +62,8 @@ M.lspconfig = {
         vim.diagnostic.open_float()
       end,
       "Floating diagnostic",
-    }
-  }
+    },
+  },
 }
 
 M.copilot = {
@@ -71,9 +73,9 @@ M.copilot = {
       function()
         require("copilot.suggestion").accept_line()
       end,
-      "Accept copilot suggestion"
-    }
-  }
+      "Accept copilot suggestion",
+    },
+  },
 }
 
 return M
